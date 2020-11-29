@@ -1,0 +1,48 @@
+{
+  "name": "vscode-transform-case",
+  "displayName": "Transform Case",
+  "description": "Adds camel and snake cases transformation commands.",
+  "version": "1.0.0",
+  "repository": {
+    "type" : "git",
+    "url": "https://github.com/sullenor/vscode-transform-case.git"
+  },
+  "publisher": "sullenor",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-transform-case.camelcase",
+    "onCommand:vscode-transform-case.snakecase"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-transform-case.camelcase",
+        "title": "Transform to Camelcase"
+      },
+      {
+        "command": "vscode-transform-case.snakecase",
+        "title": "Transform to Snakecase"
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.51.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.51.0",
+    "standard": "16.0.3"
+  },
+  "dependencies": {
+    "lodash.camelcase": "4.3.0",
+    "lodash.snakecase": "4.1.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js"
+  }
+}
