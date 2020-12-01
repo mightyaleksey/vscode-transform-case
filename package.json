@@ -2,7 +2,7 @@
   "name": "vscode-transform-case",
   "displayName": "Transform Case",
   "description": "Adds camel and snake cases transformation commands.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type" : "git",
     "url": "https://github.com/sullenor/vscode-transform-case.git"
@@ -29,11 +29,12 @@
     ]
   },
   "engines": {
-    "vscode": "^1.51.0"
+    "vscode": "^1.47.0"
   },
+  "icon": "vscode-transform-case.png",
   "devDependencies": {
     "@types/node": "^12.11.7",
-    "@types/vscode": "^1.51.0",
+    "@types/vscode": "^1.47.0",
     "standard": "16.0.3"
   },
   "dependencies": {
